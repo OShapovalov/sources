@@ -19,7 +19,7 @@ pd.options.mode.chained_assignment = None
 
 def read_data():
     data_path = "../IDAO-MuID"
-    train_concat = pd.read_hdf('train_concat_31.01_rmse_foi.h5')
+    train_concat = pd.read_hdf('train_exp.h5')
     full_train = utils.load_train_hdf(data_path)
     print('read')
     y_source = full_train.label
